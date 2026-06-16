@@ -1,17 +1,266 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Untuk Elma ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Elma ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f2eb;
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+}
+
+section{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:30px;
+position:relative;
+}
+
+h1,h2{
+font-family:'Cormorant Garamond',serif;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+max-width:850px;
+width:90%;
+text-align:center;
+animation:fadeUp 1s ease;
+}
+
+img{
+width:100%;
+border-radius:18px;
+margin-top:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+img:hover{
+transform:scale(1.03);
+}
+
+.btn{
+margin-top:25px;
+padding:12px 28px;
+border:none;
+border-radius:999px;
+background:#c8b6a6;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+text-decoration:none;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.flower{
+position:absolute;
+font-size:40px;
+opacity:.25;
+animation:float 6s ease-in-out infinite;
+}
+
+.f1{top:8%;left:8%;}
+.f2{top:15%;right:10%;}
+.f3{bottom:12%;left:12%;}
+.f4{bottom:8%;right:8%;}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.letter{
+font-size:18px;
+line-height:1.8;
+margin-top:20px;
+}
+
+.small{
+margin-top:10px;
+opacity:.7;
+}
+
+</style>
 </head>
-<body style="text-align:center;font-family:Arial;padding-top:50px;">
-    <h1>Hai Elma ❤️</h1>
 
-    <p>Selamat datang di website kecil yang aku buat khusus buat kamu.</p>
+<body>
 
-    <p>Di sini ada beberapa kenangan yang ingin aku simpan.</p>
+<!-- SLIDE 1 -->
 
-    <button onclick="alert('Aku seneng banget bisa kenal kamu ❤️')">
-        Klik Aku
-    </button>
+<section id="s1">
+
+<div class="flower f1">🌷</div>
+<div class="flower f2">🌼</div>
+
+<div class="card">
+
+<h1 style="font-size:60px;">For Elma ❤️</h1>
+
+<p class="small">
+A little museum of our memories
+</p>
+
+<img src="foto1.jpg">
+
+<a href="#s2" class="btn">
+Begin Journey →
+</a>
+
+</div>
+
+</section>
+
+<!-- SLIDE 2 -->
+
+<section id="s2">
+
+<div class="flower f3">🌸</div>
+
+<div class="card">
+
+<h2 style="font-size:42px;">
+Chapter One
+</h2>
+
+<p>
+Everything started with a simple conversation.
+</p>
+
+<img src="foto2.jpg">
+
+<a href="#s3" class="btn">
+Next Memory →
+</a>
+
+</div>
+
+</section>
+
+<!-- SLIDE 3 -->
+
+<section id="s3">
+
+<div class="flower f2">🌷</div>
+
+<div class="card">
+
+<h2 style="font-size:42px;">
+Favorite Memory
+</h2>
+
+<p>
+One of my favorite moments with you.
+</p>
+
+<img src="foto3.jpg">
+
+<a href="#s4" class="btn">
+Continue →
+</a>
+
+</div>
+
+</section>
+
+<!-- SLIDE 4 -->
+
+<section id="s4">
+
+<div class="flower f1">🌼</div>
+
+<div class="card">
+
+<h2 style="font-size:42px;">
+Little Moments
+</h2>
+
+<p>
+The moments that seem small,
+but mean so much.
+</p>
+
+<img src="foto4.jpg">
+
+<a href="#s5" class="btn">
+Open Letter →
+</a>
+
+</div>
+
+</section>
+
+<!-- SLIDE 5 -->
+
+<section id="s5">
+
+<div class="flower f4">🌷</div>
+
+<div class="card">
+
+<h2 style="font-size:48px;">
+A Letter For You
+</h2>
+
+<div class="letter">
+
+Thank you for being part of my story.
+
+Thank you for every laugh, every conversation,
+and every memory we've made together.
+
+I don't know what the future holds,
+but I know I'm grateful that I got to know you.
+
+❤️
+
+</div>
+
+<img src="foto5.jpg">
+
+<a href="#s1" class="btn">
+Replay Journey ↺
+</a>
+
+</div>
+
+</section>
+
 </body>
 </html>
